@@ -1,6 +1,8 @@
-﻿namespace Legacy.Domain.Interfaces;
+﻿using Legacy.Domain.Entities;
 
-public class IClienteRepository
+namespace Legacy.Domain.Interfaces;
+
+public interface IClienteRepository
 {
     Task<IEnumerable<Cliente>> SelecionarTodos(int pagina, int tamanhoPagina);
     Task<Cliente?> SelecionarPorId(int id);
