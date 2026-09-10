@@ -1,6 +1,6 @@
 ﻿namespace Legacy.Domain.Exceptions;
 
-public class RuleBusinessException
+public class RuleBusinessException : Exception
 {
     public RuleBusinessException(string msg) : base(msg)
     {
