@@ -1,6 +1,6 @@
 ﻿namespace Legacy.App.Dtos;
 
-public class PaginacaoDto
+public class PaginacaoDto<T>
 {
     public IEnumerable<T> Itens { get; set; } = Enumerable.Empty<T>();
     public int PaginaAtual { get; set; }
